@@ -28,6 +28,7 @@ public class EmployeeController {
     //posy restapi
     @PostMapping
     public Employee createEmployee(@RequestBody Employee employee){
+        // TODO vALIDATION EMAIL
         return employeeRepository.save(employee);
 
     }
